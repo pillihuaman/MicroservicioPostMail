@@ -14,9 +14,11 @@
         "type": "build",
         "version": "1.8.0"
     },
-    "PagoEfectivo.Mail.Application": "1.0.0-*",
     "Pagoefectivo.Mail.Domain": "1.0.0-*",
-    "Mail.Application": "1.0.0-*"
+    "Mail.Infraestructure.DynamoRepository": "1.0.0-*",
+    "Mail.Infraestructure.S3Repository": "1.0.0-*",
+    "Mail.Infraestructure.Messenger": "1.0.0-*",
+    "Mail.Infraestructure.Notification": "1.0.0-*"
   },
 
   "tools": {

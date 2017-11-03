@@ -14,15 +14,23 @@ namespace MiocroServicioPagoefectivoMailPost.Tests
     public class FunctionTest
     {
         [Fact]
-        public void TestToUpperFunction()
+        public void TestFunctionHandler()
         {
+            try
+            {
 
-            // Invoke the lambda function and confirm the string was upper cased.
-            var function = new Function();
-            var context = new TestLambdaContext();
-            var upperCase = function.FunctionHandler("hello world", context);
+                LoadEnvironmentVariable();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+          
+        }
 
-            Assert.Equal("HELLO WORLD", upperCase);
+        private void LoadEnvironmentVariable()
+        {
+            throw new NotImplementedException();
         }
     }
 }
